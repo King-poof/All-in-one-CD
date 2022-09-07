@@ -1,0 +1,45 @@
+<script>var Name, answer1, answer2, answer3, inventory;
+    inventory = ["Knife", "Cheese"];
+    document.write("Stranger: Hello young man you're new here aren't you?");
+    document.write("Stranger: What is you name?");
+    Name = input();
+    document.write(Name + " Oh thats a good name.");
+    document.write("Do you want to my help?");
+    answer1 = input();
+    
+    if (answer1 === "yes") {
+      document.write("ok here is this map");
+      inventory.append("Map");
+      document.write("You got a map!");
+      document.write("that is all i will do for you today");
+      document.write("You walk off");
+      document.write("but then suddenly a man stabs you what do you do?");
+      document.write("Say inventory");
+      document.write("to view your inventory");
+      answer2 = input();
+    
+      if (answer2 === "inventory") {
+        document.write(inventory);
+        document.write("What weapon do you what to use?");
+        document.write("type it out to use");
+        answer3 = input();
+    
+        if (answer3 === "knife") {
+          document.write("You use the Knife");
+          document.write("He lives");
+          document.write("You and him run away");
+        } else {
+          if (answer3 === "cheese") {
+            document.write("He kills you");
+          } else {
+            if (answer3 === "Map") {
+                document.write("I dont see how that will help?!?!?");
+            }
+          }
+        }
+      }
+    } else {
+      if (answer1 === "no") {
+        document.write("ok bye");
+      }
+    }</script>
